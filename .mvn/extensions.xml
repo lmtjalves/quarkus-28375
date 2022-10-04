@@ -1,0 +1,12 @@
+<extensions xmlns="http://maven.apache.org/EXTENSIONS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/EXTENSIONS/1.0.0 http://maven.apache.org/xsd/core-extensions-1.0.0.xsd">
+  <!--
+      We can't use a newer version of jgitver since our configuration is incompatible with newer versions, which leads
+      to the current version being wrongly evaluated in our pipeline.
+  -->
+  <extension>
+    <groupId>fr.brouillard.oss</groupId>
+    <artifactId>jgitver-maven-plugin</artifactId>
+    <version>1.9.0</version>
+  </extension>
+</extensions>
